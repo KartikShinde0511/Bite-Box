@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bitebox</title>
 <script src="script.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> <!--login ke logo ka library-->
     <link rel="stylesheet" href="style.css">
@@ -28,7 +28,10 @@
             <h2>Login to Bitebox</h2>
             <form>
                 <input type="email" placeholder="Enter email" id="email" required>
-                <input type="password" placeholder="Enter password" id="password" required>
+                <div style="position: relative;">
+                     <input type="password" placeholder="Enter password" id="password" required>
+                     <i class="fa-solid fa-eye" onclick="togglepassword() " style="position: absolute; top: 22px; right: 10px;"></i>
+                </div>
                 <button  type="button" onclick="login()"> Login</button>
                 <p><a href="Singup.html">forgot Password</a></p>
                 <p id="error" style="color: red;"></p>
@@ -36,6 +39,5 @@
             </form>
         </div>
      </section>
-
 </body>
 </html>
